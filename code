@@ -1,0 +1,21 @@
+income: int = int(input())
+if income <= 15527:
+    percent = int(0)
+    # calc = (income / 0) * 100
+    # calc_ = ('%.0f' % calc)
+    print("The tax for", income, "is 0%. That is", percent, "dollars!")
+elif 15528 < income <= 42707:
+    percent = int(15)
+    calc = (income / 100) * percent
+    calc_ = (round(calc))
+    print("The tax for", income, "is 15%. That is", calc_, "dollars!")
+elif 42708 < income <= 132406:
+    percent = int(25)
+    calc = (income / 100) * percent
+    calc_ = (round(calc))
+    print("The tax for", income, "is 25%. That is", calc_, "dollars!")
+elif income >= 132408:
+    percent = int(28)
+    calc = (income / 100) * percent
+    calc_ = (round(calc))
+    print("The tax for", income, "is 28%. That is", calc_, "dollars!")
